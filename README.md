@@ -12,7 +12,7 @@ Installation
 ansible-galaxy collection install havlasme.ansible
 ```
 
-```yaml title="requirements.yml"
+```yaml
 ---
 collections:
 - name: 'havlasme.ansible'
