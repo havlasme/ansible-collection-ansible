@@ -1,0 +1,25 @@
+workflow:
+  rules:
+  - if: $CI_COMMIT_BRANCH
+
+stages:
+- publish
+
+publish collection:
+  image: havlasme/ansible-molecule-podman:latest
+  stage: publish
+  variables:
+    ANSIBLE_FORCE_COLOR: 'true'
+  before_script:
+  - echo $PATH
+  - python3 --version
+  - ansible --version
+  script:
+  - make build publish
+  artifacts:
+    paths:
+    - dist/*
+    expire_in: 1 week
+  rules:
+  - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+  when: manual

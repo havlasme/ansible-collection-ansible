@@ -1,0 +1,26 @@
+---
+namespace: havlasme
+name: ansible
+version: 0.1.0
+readme: README.md
+authors:
+- Tomáš Havlas <tomas@havlas.me>
+description: An Ansible collection of ansible utilities used by havlasme collections and roles.
+license_file: LICENSE
+tags:
+- ansible
+repository: https://gitlab.com/havlas.me/ansible-collection-ansible
+documentation: https://gitlab.com/havlas.me/ansible-collection-ansible
+homepage: https://gitlab.com/havlas.me/ansible-collection-ansible
+issues: https://gitlab.com/havlas.me/ansible-collection-ansible/-/issues
+build_ignore:
+- .ansible-lint
+- .cache
+- .gitignore
+- .gitlab-ci.yml
+- .idea
+- .yamllint
+- dist
+- Makefile
+- roles/*/.ansible-lint
+- roles/*/.yamllint
