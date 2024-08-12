@@ -10,6 +10,31 @@ from ansible.utils.path import unfrackpath
 
 display = Display()
 
+DOCUMENTATION = '''
+---
+module: template
+version_added: "0.1.0"
+short_description: Lookup a template file
+description:
+    - This lookup plugin searches for a template file with the given name.
+    - It supports both absolute and relative paths, and can search in multiple directories.
+options:
+    terms:
+        description:
+            - The name of the template file to look up.
+        required: true
+        type: list
+author:
+    - Tomas Havlas (@havlasme)
+'''
+
+RETURN = '''
+path:
+    description: Returns the path to the found template file.
+    type: str
+    returned: always
+'''
+
 
 class LookupModule(LookupBase):
     def run(self, terms, variables=None, **kwargs):

@@ -1,22 +1,32 @@
-def is_absent(value):
-    from jinja2.runtime import UndefinedError
+from jinja2.runtime import UndefinedError
 
-    try:
-        return value == 'absent'
-    except UndefinedError:
-        return False
+DOCUMENTATION = '''
+---
+module: is_present
+version_added: "0.1.0"
+short_description: Checks if a value is 'present'
+description:
+    - This filter checks if the given value is the string 'present'.
+    - Useful for filtering lists with state parameter that can be marked as 'present'.
+options:
+    value:
+        description:
+            - The value to be checked if it equals 'present'.
+        required: true
+        type: any
+author:
+    - Tomas Havlas (@havlasme)
+'''
 
-def is_directory(value):
-    from jinja2.runtime import UndefinedError
+RETURN = '''
+boolean:
+    description: Returns True if the value is 'present' or undefined, otherwise False.
+    type: bool
+    returned: always
+'''
 
-    try:
-        return value == 'directory'
-    except UndefinedError:
-        return False
 
 def is_present(value):
-    from jinja2.runtime import UndefinedError
-
     try:
         return value == 'present'
     except UndefinedError:
@@ -26,7 +36,5 @@ def is_present(value):
 class TestModule(object):
     def tests(self):
         return {
-            'is_absent': is_absent,
-            'is_directory': is_directory,
             'is_present': is_present
         }
