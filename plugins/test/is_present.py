@@ -7,7 +7,7 @@ description:
     - This filter checks if the given value is the string 'present'.
     - Useful for filtering lists with state parameter that can be marked as 'present'.
 options:
-    object:
+    obj:
         description:
             - The object to be checked for the specified attribute.
         required: true
@@ -29,10 +29,10 @@ boolean:
 '''
 
 
-def is_absent(object, attr='state'):
-    if not isinstance(object, dict):
+def is_present(obj, attr='state'):
+    if not isinstance(obj, dict):
         return True
-    return object.get(attr) == 'present'
+    return obj.get(attr) == 'present'
 
 
 class TestModule(object):

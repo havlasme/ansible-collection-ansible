@@ -7,7 +7,7 @@ description:
     - This filter checks if the given value is the string 'directory'.
     - Useful for filtering lists with state parameter that can be marked as 'directory'.
 options:
-    object:
+    obj:
         description:
             - The object to be checked for the specified attribute.
         required: true
@@ -29,10 +29,10 @@ boolean:
 '''
 
 
-def is_directory(object, attr='state'):
-    if not isinstance(object, dict):
+def is_directory(obj, attr='state'):
+    if not isinstance(obj, dict):
         return False
-    return object.get(attr) == 'directory'
+    return obj.get(attr) == 'directory'
 
 
 class TestModule(object):
