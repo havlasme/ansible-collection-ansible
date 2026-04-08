@@ -1,19 +1,22 @@
-from jinja2.runtime import UndefinedError
-
 DOCUMENTATION = '''
 ---
 module: is_present
 version_added: "0.1.0"
-short_description: Checks if a value is 'present'
+short_description: Checks if state attribute value is 'present'
 description:
     - This filter checks if the given value is the string 'present'.
     - Useful for filtering lists with state parameter that can be marked as 'present'.
 options:
-    value:
+    object:
         description:
-            - The value to be checked if it equals 'present'.
+            - The object to be checked for the specified attribute.
         required: true
-        type: any
+        type: dict
+    attr:
+        description:
+            - The attribute name to check within the object. Defaults to 'state'.
+        required: false
+        type: str
 author:
     - Tomas Havlas (@havlasme)
 '''
@@ -26,11 +29,10 @@ boolean:
 '''
 
 
-def is_present(value):
-    try:
-        return value == 'present'
-    except UndefinedError:
+def is_absent(object, attr='state'):
+    if not isinstance(object, dict):
         return True
+    return object.get(attr) == 'present'
 
 
 class TestModule(object):

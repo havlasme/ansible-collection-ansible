@@ -1,36 +1,38 @@
-from jinja2.runtime import UndefinedError
-
 DOCUMENTATION = '''
 ---
 module: is_absent
 version_added: "0.1.0"
-short_description: Checks if a value is 'absent'
+short_description: Checks if state attribute value is 'absent'.
 description:
     - This filter checks if the given value is the string 'absent'.
     - Useful for filtering lists with state parameter that can be marked as 'absent'.
 options:
-    value:
+    object:
         description:
-            - The value to be checked if it equals 'absent'.
+            - The object to be checked for the specified attribute.
         required: true
-        type: any
+        type: dict
+    attr:
+        description:
+            - The attribute name to check within the object. Defaults to 'state'.
+        required: false
+        type: str
 author:
     - Tomas Havlas (@havlasme)
 '''
 
 RETURN = '''
 boolean:
-    description: Returns True if the value is 'absent', otherwise False.
+    description: Returns True if the attribute value is 'absent', otherwise False.
     type: bool
     returned: always
 '''
 
 
-def is_absent(value):
-    try:
-        return value == 'absent'
-    except UndefinedError:
+def is_absent(object, attr='state'):
+    if not isinstance(object, dict):
         return False
+    return object.get(attr) == 'absent'
 
 
 class TestModule(object):
