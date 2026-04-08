@@ -31,8 +31,8 @@ boolean:
 
 def is_present(obj, attr='state'):
     if not isinstance(obj, dict):
-        return True
-    return obj.get(attr) == 'present'
+        return False
+    return obj.get(attr, 'present') == 'present'
 
 
 class TestModule(object):
