@@ -11,7 +11,7 @@ build:
 	$(GALAXY) collection build --output-path "$(DISTDIR)"
 
 .PHONY: install
-install:
+install: $(DISTDIR)/$(NAMESPACE)-$(COLLECTION)-$(VERSION).tar.gz
 ifeq (, $(shell which yq))
 	$(error "no yq. try running pip3 install yq")
 else
@@ -19,7 +19,7 @@ else
 endif
 
 .PHONY: publish
-publish:
+publish: $(DISTDIR)/$(NAMESPACE)-$(COLLECTION)-$(VERSION).tar.gz
 ifeq (, $(shell which yq))
 	$(error "no yq. try running pip3 install yq")
 else
@@ -29,3 +29,6 @@ endif
 .PHONY: clean
 clean:
 	-rm --recursive "$(DISTDIR)"
+
+$(DISTDIR)/$(NAMESPACE)-$(COLLECTION)-$(VERSION).tar.gz:
+	$(MAKE) build
