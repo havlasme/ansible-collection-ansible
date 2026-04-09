@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: None
+# SPDX-License-Identifier: 0BSD
+
 GALAXY = @ansible-galaxy
 
 NAMESPACE ?= $(shell yq -r .namespace galaxy.yml)

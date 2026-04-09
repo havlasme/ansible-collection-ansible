@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2024 Tomáš Havlas <tomas@havlas.me>
+# SPDX-License-Identifier: Apache-2.0
+
 DOCUMENTATION = '''
 ---
 module: is_present
