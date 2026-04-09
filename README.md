@@ -4,7 +4,7 @@ Ansible Collection - havlasme.ansible
 [![][version-image]][version-link]
 [![Apache-2.0 license][license-image]][license-link]
 
-An [Ansible](https://www.ansible.com/) collection of ansible utilities used by `havlasme` collections and roles.
+An [Ansible](https://www.ansible.com/) collection of plugins used by `havlasme` collections and roles.
 
 Installation
 ------------
