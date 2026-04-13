@@ -1,3 +1,8 @@
+<!--
+SPDX-FileCopyrightText: None
+SPDX-License-Identifier: 0BSD
+-->
+
 Ansible Collection - havlasme.ansible
 =====================================
 
