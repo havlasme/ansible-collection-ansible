@@ -1,9 +1,14 @@
 #!/usr/bin/env bash
 
-# SPDX-FileCopyrightText: 2026 Tomáš Havlas <tomas@havlas.me>
+# SPDX-FileCopyrightText: 2025 Tomáš Havlas <tomas@havlas.me>
 # SPDX-License-Identifier: Apache-2.0
 
 set -euo pipefail
+
+if ! command -v cz >/dev/null 2>&1; then
+  echo "no cz. try running pipx install commitizen"
+  exit 1
+fi
 
 # Enforce commit message format using Commitizen.
 git cz check --allow-abort --commit-msg-file "$1"
