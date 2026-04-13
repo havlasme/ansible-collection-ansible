@@ -4,7 +4,7 @@
 ---
 namespace: havlasme
 name: ansible
-version: 0.3.1
+version: 0.3.2
 readme: README.md
 authors:
 - Tomáš Havlas <tomas@havlas.me>
