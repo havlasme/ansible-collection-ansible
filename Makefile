@@ -1,6 +1,8 @@
 # SPDX-FileCopyrightText: None
 # SPDX-License-Identifier: 0BSD
 
+include .githooks/githooks.mk
+
 GALAXY = @ansible-galaxy
 
 NAMESPACE ?= $(shell yq -r .namespace galaxy.yml)
