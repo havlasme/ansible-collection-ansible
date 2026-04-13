@@ -10,7 +10,7 @@ Ansible Collection - havlasme.ansible
 [![Apache-2.0 license][license-image]][license-link]
 [![CI][ci-image]][ci-link]
 
-An [Ansible](https://www.ansible.com/) collection of plugins used by `havlasme` collections and roles.
+An [Ansible](https://www.ansible.com/) Collection of modules and plugins used by `havlasme` collections and roles.
 
 Installation
 ------------
@@ -23,6 +23,8 @@ ansible-galaxy collection install havlasme.ansible
 collections:
 - name: 'havlasme.ansible'
 ```
+
+See [Using Ansible collections](https://docs.ansible.com/projects/ansible/latest/user_guide/collections_using.html).
 
 Development
 -----------
