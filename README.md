@@ -42,9 +42,9 @@ Author Information
 Created in 2024 by [Tomáš Havlas](https://havlas.me/).
 
 
-[ci-image]: https://img.shields.io/gitlab/pipeline-status/havlas.me/ansible-collection-ansible?style=flat-square
+[ci-image]: https://img.shields.io/gitlab/pipeline-status/havlas.me/ansible-collection-ansible?style=for-the-badge
 [ci-link]: https://gitlab.com/havlas.me/ansible-collection-ansible/-/pipelines
-[galaxy-image]: https://img.shields.io/ansible/collection/v/havlasme/ansible?style=flat-square
+[galaxy-image]: https://img.shields.io/ansible/collection/v/havlasme/ansible?style=for-the-badge
 [galaxy-link]: https://galaxy.ansible.com/ui/repo/published/havlasme/ansible/
-[license-image]: https://img.shields.io/badge/license-Apache2.0-blue.svg?style=flat-square
+[license-image]: https://img.shields.io/badge/license-Apache2.0-blue.svg?style=for-the-badge
 [license-link]: LICENSE
