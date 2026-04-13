@@ -17,6 +17,7 @@ documentation: https://gitlab.com/havlas.me/ansible-collection-ansible
 homepage: https://gitlab.com/havlas.me/ansible-collection-ansible
 issues: https://gitlab.com/havlas.me/ansible-collection-ansible/-/issues
 build_ignore:
+- .ansible
 - .ansible-lint
 - .cache
 - .editorconfig
