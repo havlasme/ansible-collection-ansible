@@ -19,6 +19,7 @@ issues: https://gitlab.com/havlas.me/ansible-collection-ansible/-/issues
 build_ignore:
 - .ansible-lint
 - .cache
+- .editorconfig
 - .gitignore
 - .gitlab-ci.yml
 - .idea
