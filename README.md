@@ -31,15 +31,10 @@ Development
 make build
 ```
 
-License
--------
+Licensing
+---------
 
 [Apache-2.0][license-link]
-
-Author Information
-------------------
-
-Created in 2024 by [Tomáš Havlas](https://havlas.me/).
 
 
 [ci-image]: https://img.shields.io/gitlab/pipeline-status/havlas.me/ansible-collection-ansible?style=for-the-badge
