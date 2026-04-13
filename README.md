@@ -37,9 +37,9 @@ Licensing
 [Apache-2.0][license-link]
 
 
-[ci-image]: https://img.shields.io/gitlab/pipeline-status/havlas.me/ansible-collection-ansible?style=for-the-badge
+[ci-image]: https://img.shields.io/gitlab/pipeline-status/havlas.me/ansible-collection-ansible
 [ci-link]: https://gitlab.com/havlas.me/ansible-collection-ansible/-/pipelines
-[galaxy-image]: https://img.shields.io/ansible/collection/v/havlasme/ansible?style=for-the-badge
+[galaxy-image]: https://img.shields.io/ansible/collection/v/havlasme/ansible
 [galaxy-link]: https://galaxy.ansible.com/ui/repo/published/havlasme/ansible/
-[license-image]: https://img.shields.io/badge/license-Apache2.0-blue.svg?style=for-the-badge
+[license-image]: https://img.shields.io/badge/license-Apache2.0-blue.svg
 [license-link]: LICENSE
