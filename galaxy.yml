@@ -8,7 +8,7 @@ version: 0.3.0
 readme: README.md
 authors:
 - Tomáš Havlas <tomas@havlas.me>
-description: An Ansible collection of plugins used by havlasme collections and roles.
+description: An Ansible Collection of modules and plugins used by havlasme collections and roles.
 license:
 - Apache-2.0
 license_file: LICENSE
