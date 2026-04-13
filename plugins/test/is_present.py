@@ -34,7 +34,7 @@ boolean:
 
 def is_present(obj, attr='state'):
     if not isinstance(obj, dict):
-        return False
+        return True
     return obj.get(attr, 'present') == 'present'
 
 
