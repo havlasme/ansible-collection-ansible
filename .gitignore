@@ -1,6 +1,7 @@
 # SPDX-FileCopyrightText: None
 # SPDX-License-Identifier: 0BSD
 
+.ansible
 .cache
 __pycache__
 
