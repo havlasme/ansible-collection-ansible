@@ -7,7 +7,7 @@ set -euo pipefail
 
 if ! command -v cz >/dev/null 2>&1; then
   echo "no cz. try running pipx install commitizen"
-  exit 1
+  exit 127
 fi
 
 # Enforce commit message format using Commitizen.
