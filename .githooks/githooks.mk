@@ -1,7 +1,7 @@
 # SPDX-FileCopyrightText: None
 # SPDX-License-Identifier: 0BSD
 
-GITHOOKS := .githooks
+GITHOOKS ?= .githooks
 
 .PHONY: githooks
 githooks:
