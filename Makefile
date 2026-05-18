@@ -5,9 +5,9 @@ include .githooks/githooks.mk
 
 GALAXY = @ansible-galaxy
 
-NAMESPACE ?= $(shell yq -r .namespace galaxy.yml)
-COLLECTION ?= $(shell yq -r .name galaxy.yml)
-VERSION ?= $(shell yq -r .version galaxy.yml)
+NAMESPACE := $(shell yq -r .namespace galaxy.yml)
+COLLECTION := $(shell yq -r .name galaxy.yml)
+VERSION := $(shell yq -r .version galaxy.yml)
 
 DISTDIR ?= ./dist
 
