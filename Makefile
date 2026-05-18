@@ -17,7 +17,7 @@ build:
 
 .PHONY: install
 install: $(DISTDIR)/$(NAMESPACE)-$(COLLECTION)-$(VERSION).tar.gz
-ifeq (, $(shell which yq 2>/dev/null))
+ifeq (, $(shell command -v yq 2>/dev/null))
 	$(error "no yq. try running pip3 install yq")
 endif
 	$(GALAXY) collection install "$(DISTDIR)/$(NAMESPACE)-$(COLLECTION)-$(VERSION).tar.gz"
@@ -25,7 +25,7 @@ endif
 
 .PHONY: publish
 publish: $(DISTDIR)/$(NAMESPACE)-$(COLLECTION)-$(VERSION).tar.gz
-ifeq (, $(shell which yq 2>/dev/null))
+ifeq (, $(shell command -v yq 2>/dev/null))
 	$(error "no yq. try running pip3 install yq")
 endif
 	$(GALAXY) collection publish "$(DISTDIR)/$(NAMESPACE)-$(COLLECTION)-$(VERSION).tar.gz" --token "$(GALAXY_API_TOKEN)"
