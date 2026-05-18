@@ -22,7 +22,6 @@ ifeq (, $(shell command -v yq 2>/dev/null))
 endif
 	$(GALAXY) collection install "$(DISTDIR)/$(NAMESPACE)-$(COLLECTION)-$(VERSION).tar.gz"
 
-
 .PHONY: publish
 publish: $(DISTDIR)/$(NAMESPACE)-$(COLLECTION)-$(VERSION).tar.gz
 ifeq (, $(shell command -v yq 2>/dev/null))
