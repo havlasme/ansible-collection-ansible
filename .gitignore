@@ -1,6 +1,18 @@
 # SPDX-FileCopyrightText: None
 # SPDX-License-Identifier: 0BSD
 
+*.backup
+*.bak
+*.key
+*.local
+*.log
+*.pem
+*.sqlite*
+*.swp
+*.tmp
+*~
+Thumbs.db
+
 .ansible
 .cache
 __pycache__
