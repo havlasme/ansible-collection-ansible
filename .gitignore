@@ -14,8 +14,8 @@
 *~
 Thumbs.db
 
+__pycache__
 .ansible
 .cache
-__pycache__
 
-/dist/
+/dist
