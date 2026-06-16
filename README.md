@@ -8,7 +8,7 @@ Ansible Collection - havlasme.ansible
 
 [![Ansible Galaxy][galaxy-image]][galaxy-link]
 [![Apache-2.0 license][license-image]][license-link]
-[![CI][ci-image]][ci-link]
+[![CI](https://img.shields.io/gitlab/pipeline-status/havlas.me/ansible-collection-ansible)](https://gitlab.com/havlas.me/ansible-collection-ansible/-/pipelines)
 
 An [Ansible](https://www.ansible.com/) Collection of modules and plugins used by `havlasme` collections and roles.
 
@@ -36,11 +36,9 @@ make build
 Licensing
 ---------
 
-[Apache-2.0][license-link]
+[Apache-2.0](LICENSE)
 
 
-[ci-image]: https://img.shields.io/gitlab/pipeline-status/havlas.me/ansible-collection-ansible
-[ci-link]: https://gitlab.com/havlas.me/ansible-collection-ansible/-/pipelines
 [galaxy-image]: https://img.shields.io/ansible/collection/v/havlasme/ansible
 [galaxy-link]: https://galaxy.ansible.com/ui/repo/published/havlasme/ansible/
 [license-image]: https://img.shields.io/badge/license-Apache2.0-blue.svg

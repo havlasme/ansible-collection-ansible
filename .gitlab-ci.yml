@@ -1,5 +1,9 @@
 # SPDX-FileCopyrightText: None
+#
 # SPDX-License-Identifier: 0BSD
+
+include:
+- local: .gitlab/ci/defaults.gitlab-ci.yml
 
 workflow:
   rules:
@@ -9,7 +13,6 @@ stages:
 - publish
 
 publish collection:
-  image: havlasme/ansible-molecule-podman:latest
   stage: publish
   variables:
     ANSIBLE_FORCE_COLOR: 'true'

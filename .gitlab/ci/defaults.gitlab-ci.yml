@@ -1,0 +1,7 @@
+# SPDX-FileCopyrightText: None
+#
+# SPDX-License-Identifier: 0BSD
+
+default:
+  image: havlasme/ansible-molecule-podman:latest
+  interruptible: true
