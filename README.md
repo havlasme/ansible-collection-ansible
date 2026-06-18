@@ -30,7 +30,7 @@ Development
 -----------
 
 ```shell
-make build
+just build
 ```
 
 Licensing

@@ -27,7 +27,7 @@ publish:
 
 # Clean up the build directory.
 clean:
-    rm --recursive "{{ DISTDIR }}"
+    -rm --recursive "{{ DISTDIR }}"
 
 # Reset the repository to a clean state.
 distclean: clean
